@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Library, Virtual, Ambience, Music, Study, Relax, Background Noise">
+		<meta name="author" content="mari">
+		<title>sally's ook</title>
+		<link rel="icon" type="image/PNG" href="https://pbs.twimg.com/media/FB7Q-u5XMAALsa3?format=jpg&name=medium"/>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<noscript>Your browser does not support JavaScript!</noscript>
+		
+		<section class="header">
+			<button class="nav-links" onclick=" window.open('https://open.spotify.com/playlist/29BH29CHO5n9qbb4rDXsHT?si=05b82bc80fb94cf7', '_blank')">playlist</button>
+			<button id="modalButton" class="nav-links">about</button>
+
+			<div>
+				<div id="myModal" class="modal">
+				  <div class="modal-content" >
+				    <span class="close" >&times;</span>
+				    <center><h2>about</h2></center><br>
+				    <p> happiest 21st birthday sally! 
+				    i hope this little space can be a source of comfort for you <3 </p>
+				  </div>
+
+				</div>
+			</div>
+		</section>	
+
+		<section class="content">
+			<div class="left animate__animated animate__fadeInLeftBig animate__delay4s">
+				<div class="text-box">
+					<h1>Sally's Nook</h1>
+					<p>a little gift from Mari.</p>
+					<br/><br/>
+
+					<iframe src="https://open.spotify.com/embed/playlist/29BH29CHO5n9qbb4rDXsHT" width="60%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowtransparency=”true”></iframe>
+
+				</div>
+
+				<div class="container">
+				</div>
+			</div>
+
+			<div class="middle animate__animated animate__zoomIn animate__delay-1s">
+				<img src="https://64.media.tumblr.com/7686769ec367f29f16d46b52a7b1353d/tumblr_n25gu1HnJS1qgdvlco2_r1_500.gifv" alt="illustration" class="illustration">
+			</div>
+
+			<div class="right animate__animated animate__fadeInRightBig animate__delay4s">
+				<div class="massPause">
+					<p id="pauseNotice"> Pause all &nbsp;</p>
+					<input type="checkbox" id="pauseAll" onclick="pauseAll()">
+				</div>
+				<div class="audio unpressed">
+					<span>
+						<p> Rainy Weather &nbsp;</p>
+					</span>
+					<audio loop id="0">
+						<source src="assets/rain.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<button id="play-0" onclick="playSound(0)"></button>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(0, this.value)" min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
+
+				<div class="audio unpressed">
+					<span>
+						<p> Sunny Weather &nbsp;</p>
+					</span>
+					<audio loop id="5">
+						<source src="assets/sunny.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<button id="play-5" onclick="playSound(5)"></button>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(5, this.value)" min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
+
+				<div class="audio unpressed">
+					<span>
+						<p> Turning Pages &nbsp;</p>
+					</span>
+					<audio loop id="1">
+						<source src="assets/pages.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<button id="play-1" onclick="playSound(1)"></button>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(1, this.value)" min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
+				
+				<div class="audio unpressed">
+					<span>
+						<p> Forest &nbsp;</p>
+					</span>
+					<audio loop id="2">
+						<source src="assets/forest.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<button id="play-2" onclick="playSound(2)"></button>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(2, this.value)" min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
+
+				<div class="audio unpressed">
+					<span>
+						<p> Crackling Fireplace &nbsp;</p>
+					</span>
+					<audio loop id="3">
+						<source src="assets/fireplace.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<button id="play-3" onclick="playSound(3)"></button>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(3, this.value)" min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
+
+				<div class="audio unpressed">
+					<span>
+						<p> Ocean &nbsp;</p>
+					</span>
+					<audio loop id="4">
+						<source src="assets/ocean.mp3" type="audio/mpeg">
+						<p> Your browser doesn't support HTML 5 sounds.</p>
+					</audio>
+					<span>
+						<button id="play-4" onclick="playSound(4)"></button>
+						<div class="volume-control" id="vol"></div>
+						<input type="range" onchange="changeVolume(4, this.value)"min="0" max="1" step="0.025" value="0.70" class="vol-control">
+					</span>
+				</div>
+
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
