@@ -8,7 +8,6 @@
 }
 
 
-
 .text-box h1{
   font-size: 5em;
   font-family: 'Noto Serif Display', serif;
@@ -27,7 +26,7 @@ p{
   background-position: center;
   background-size: cover;
   position: relative;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 .header button {
   border: none;
@@ -68,7 +67,7 @@ p{
   background-color: #a06b39 ;
   margin: 20% auto;
   padding: 50px;
-  border-radius: 20px;
+  border-radius: 14px;
   width: 40%; 
 }
 .modal-content a {
@@ -126,16 +125,31 @@ p{
 
 .illustration:hover {opacity: 1}
 
+.illus{
+  width: 80%;
+  height: 100%;
+  opacity: 0.95;
+  transition: 0.3s;
+}
 
+.illus:hover {opacity: 1}
 
 .mid{
   width: 30%;
-  background-color: transparent;
-  display: inline;
+  background: transparent;
+  display: flex;
   position: absolute;
-  bottom: 110px;
+  bottom: 19%;
   left: 45%;
 
+}
+
+.lyrics {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  bottom: 14%;
+  right:  36%;
 }
 
 
@@ -153,7 +167,6 @@ p{
 }
 
 .column2{
-
   float: right;
 }
 .audio {
