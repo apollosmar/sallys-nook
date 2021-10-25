@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,700&family=Nunito:wght@400;700&display=swap');
+
+
+
+*{
+  margin:0;
+  padding:0;
+  background-color: #c6c3b3;
+}
+
+
+
+@media screen and (max-width: 1115px) {
+  .left {
+    width: 100% !important; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .audio {
+    max-width: 300px;
+  }
+
+  .right {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .massPause {
+    margin-right: 20% !important;
+  }
+
+  footer {
+    position: static !important;
+    flex-shrink: 0 !important;
+    padding-top: 7%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+  }
+
+  .mid {
+    display: none !important;
+  }
+  .lyrics {
+    display: none !important;
+  }
+
+  .column2{
+  float: right;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+  .text-box h1 {
+    font-size: 50px !important;
+    position: relative;
+    padding-left: 12px !important;
+    text-align: center !important;
+  }
+  .text-box p {
+    font-size: 18px !important;
+    position: relative;
+    padding-left: 12px !important;
+    text-align: center !important;
+  }
+  .middle{
+    width: 100px !important;
+  }
+  .spotify{
+    position: relative !important;
+    width:  500px !important;
+    padding-left: 40px !important;
+  }
+  .middle{
+    width: 300px !important;
+    padding-top: 20px !important;
+    padding-left: 65px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .modal-content {
+    width: 30% !important; 
+    font-size: 15px;
+  }
+
+  .audio {
+    max-width: 300px;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+
+  .massPause {
+    margin-right: 20% !important;
+  }
+
+  .column2 {
+    float: left;
+  }
+
+}
+
+
+
+.text-box h1{
+  font-size: 5em;
+  font-family: 'Noto Serif Display', serif;
+}
+
+p{
+  font-family: 'Nunito';
+}
+
+
+
+.header{
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 7%;
+}
+.header button {
+  border: none;
+  font-family: "Noto Serif Display", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-right: 25px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header button::after {
+  content:'';
+  width:0%;
+  height:2px;
+  background:#873c1e;
+  display: block;
+  margin: auto;
+  transition:0.4s;
+}
+.header button:hover::after {
+  width: 100%;
+}
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.8); 
+}
+.modal-content {
+  background-color: #a06b39 ;
+  margin: 20% auto;
+  padding: 50px;
+  border-radius: 14px;
+  width: 40%; 
+}
+.modal-content a {
+  color: #312921;
+}
+.modal-content p, .modal-content h2, .modal-content a, .modal-content span{
+  background-color: #a06b39 !important;
+}
+
+.close {
+  color: #ccaf9b;
+  float: right;
+  top: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #312921;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+.left {
+  float: right;
+  height:100%;
+  width: 26%;
+}
+
+
+
+
+.middle {
+  position: static;
+  float: left;
+  width: 40%;
+  padding-left: 5% ;
+  padding-bottom: 2%;
+  display: flex;
+  top: 30%;
+}
+
+.illustration {
+  width: 80%;
+  height: 20%;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.illustration:hover {opacity: 1}
+
+.illus{
+  width: 80%;
+  height: 100%;
+  opacity: 0.95;
+  transition: 0.3s;
+}
+
+.illus:hover {opacity: 1}
+
+.mid{
+  width: 30%;
+  background: transparent;
+  display: flex;
+  position: absolute;
+  bottom: 17%;
+  left: 45%;
+
+}
+
+.lyrics {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  bottom: 12%;
+  right:  36%;
+}
+
+
+
+.right{
+  float: left;
+  margin-right: 2%;
+  background: transparent;
+  width: 35%;
+  padding-left: 5%;
+}
+
+.column1{
+  float: left;
+  margin-right: 20px;
+}
+
+
+.audio {
+  margin: 25px auto;
+  width: 100%;
+}
+
+.audio span {
+  align-items: center;
+  display: flex;
+}
+
+.audio button {
+  appearance:auto;
+  height:15px;
+  width:15px;
+  cursor:pointer;
+  border:none;
+  background:transparent;
+  background-size: 15px;
+}
+
+.unpressed button {
+  background-image:url(https://img.icons8.com/android/24/000000/play.png);
+  transition: .3s ease;
+}
+
+.unpressed button:hover{
+  opacity: 0.3;
+}
+
+
+.pressed button {
+  background-image: url(https://img.icons8.com/android/24/000000/pause.png);
+  transition: .3s ease;
+}
+
+.pressed button:hover{
+  opacity: 0.3;
+}
+
+.volume-control {
+  background-size:16px;
+  height:16px;
+  width:16px;
+  display:flex;
+  margin-right: 5px;
+}
+
+.muted {
+  background-image: url(https://img.icons8.com/material-rounded/24/000000/no-audio--v1.png);
+}
+
+.vol-control {
+  -webkit-appearance: none;
+  width:200px;
+  height: 1.5px;
+  border-radius: 5px;  
+  background: #312921;
+  position:relative;
+  display:flex;
+}
+
+.vol-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 13px;
+  border-radius: 50%; 
+  background: #a06b39;
+  cursor: pointer;
+}
+
+.massPause {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+}
